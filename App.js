@@ -1,3 +1,4 @@
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import "react-native-gesture-handler";
 import { StyleSheet, Text, View } from 'react-native';
@@ -5,11 +6,16 @@ import Gretting from './src/components/Gretting';
 
 export default function App() {
   return (
+    <NavigationContainer>
+      
     <View style={styles.container}>
     <Text>Creating a ReactNative App!</Text>
     {/* <Gretting /> */}
     <Gretting firstname='Jenerth' lastname='Rodriguez'/>                            
     </View>
+
+    </NavigationContainer>
+    
   );
 }
 
