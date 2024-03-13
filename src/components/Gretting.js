@@ -14,5 +14,5 @@ export default function Gretting(props){
 
 Gretting.propTypes = {
     firstname: PropTypes.string.isRequired,
-    lastname: PropTypes.string,
+    lastname: PropTypes.string.isRequired,
 };
