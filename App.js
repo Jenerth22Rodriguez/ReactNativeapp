@@ -6,8 +6,9 @@ export default function App() {
   return (
     <View style={styles.container}>
     <Text>Creating a ReactNative App!</Text>
-    <Gretting name = "Carolina Falcon"/>    
-   <Gretting name = "Jenerth Rodriguez"/>                             
+    <Gretting />
+    {/* <Gretting name = "Carolina Falcon" >*/}    
+   {/*<Gretting name = "Jenerth Rodriguez"/> */}                            
     </View>
   );
 }
