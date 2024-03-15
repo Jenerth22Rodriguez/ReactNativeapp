@@ -1,13 +1,19 @@
-import * as React from "react";
-import { View, Text } from "react-native";
+import React from "react";
+import { View, Text, Button } from "react-native";
 
-export default function HomeScreen(){
+export default function HomeScreen(props) {
+    const { navigation } = props;
+
+    const goToPage = () => {
+        navigation.navigate("Settings");
+    };
+
     return (
-            <View>
+        <View>
             <Text> 
                 Estamos en HomeScreen
             </Text>
-
-            </View>
+            <Button onPress={goToPage} title="go back home" />
+        </View>
     );
 }
